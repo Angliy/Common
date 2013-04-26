@@ -32,11 +32,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -55,10 +57,43 @@
     <Compile Include="Cache\CacheSettings.cs" />
     <Compile Include="Cache\ICache.cs" />
     <Compile Include="ConfigHandler\ConfigHandler.cs" />
-    <Compile Include="Container\CommonObjectContainer.cs" />
-    <Compile Include="Container\IObjectContainer.cs" />
+    <Compile Include="Data\Action\AppConfig.cs" />
+    <Compile Include="Data\Action\MAction.cs" />
+    <Compile Include="Data\Action\MProc.cs" />
+    <Compile Include="Data\Aop\Aop.cs" />
+    <Compile Include="Data\Aop\AopEnum.cs" />
+    <Compile Include="Data\Aop\IAop.cs" />
+    <Compile Include="Data\DAL\DalAction.cs" />
+    <Compile Include="Data\DAL\DbBase.cs" />
+    <Compile Include="Data\DAL\Log.cs" />
+    <Compile Include="Data\DAL\OleHelper.cs" />
+    <Compile Include="Data\DAL\OracleHelper.cs" />
+    <Compile Include="Data\DAL\SQLHelper.cs" />
+    <Compile Include="Data\Orm\ICommon.cs" />
+    <Compile Include="Data\Orm\OrmBase.cs" />
+    <Compile Include="Data\SQL\DataType.cs" />
+    <Compile Include="Data\SQL\OutPutData.cs" />
+    <Compile Include="Data\SQL\OutPutEnum.cs" />
+    <Compile Include="Data\SQL\Pager.cs" />
+    <Compile Include="Data\SQL\ProcedureSql.cs" />
+    <Compile Include="Data\SQL\SQLString.cs" />
+    <Compile Include="Data\Table\MDataCell.cs" />
+    <Compile Include="Data\Table\MDataColumn.cs" />
+    <Compile Include="Data\Table\MDataProperty.cs" />
+    <Compile Include="Data\Table\MDataRow.cs" />
+    <Compile Include="Data\Table\MDataTable.cs" />
+    <Compile Include="Data\Tool\JsonHelper.cs" />
+    <Compile Include="Data\UI\MActionUI.cs" />
+    <Compile Include="Data\UI\MBindUI.cs" />
+    <Compile Include="Data\Xml\HtmlTagType.cs" />
+    <Compile Include="Data\Xml\MutilLanguage.cs" />
+    <Compile Include="Data\Xml\Rss.cs" />
+    <Compile Include="Data\Xml\XhtmlUrlResolver.cs" />
+    <Compile Include="Data\Xml\XmlBase.cs" />
+    <Compile Include="Data\Xml\XmlHelper.cs" />
+    <Compile Include="Factory\Container\ObjectContainer.cs" />
+    <Compile Include="Factory\Container\IObjectContainer.cs" />
     <Compile Include="Factory\FactoryBase.cs" />
-    <Compile Include="Factory\IFactory.cs" />
     <Compile Include="Helper\JsonHelper.cs" />
     <Compile Include="Helper\DirFileHelper.cs" />
     <Compile Include="Helper\SqlHelper.cs" />

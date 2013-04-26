@@ -17,6 +17,10 @@ namespace Example
         public static string CachePrefix { get; set; }
         public static string CacheDefaultTimeToLive{ get; set; }
 
+        public static string OrmConnection { get; set; }
+
+
+
     }
 
 
@@ -30,6 +34,7 @@ namespace Example
             TestConfig.CachePrefix = GetConfigValue(section, "//CachePrefix");
             TestConfig.CacheDefaultTimeToLive = GetConfigValue(section, "//CacheDefaultTimeToLive");
             TestConfig.CacheType = GetConfigValue(section, "//CacheType");
+            TestConfig.OrmConnection = GetConfigValue(section, "//OrmConnection");
             return section;
         }
     }

@@ -5,6 +5,9 @@ using System.Data;
 
 namespace Common.Helper
 {
+    /// <summary>
+    /// 文件操作类
+    /// </summary>
     public static class DirFileHelper
     {
         #region 检测指定目录是否存在

@@ -11,9 +11,16 @@ using System.Data.OleDb;
 
 namespace Common.Helper
 {
+    /// <summary>
+    /// Oracle SqlHelper
+    /// </summary>
     public static class SqlHelper
     {
+        /// <summary>
+        /// 连接字符串
+        /// </summary>
         public static string ConnectionString = "";
+
 
         /// <summary>
         /// 执行SQL语句

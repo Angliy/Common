@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigHandler\ConfigHandler.cs" />
+    <Compile Include="Data\TestData.cs" />
     <Compile Include="Factory\FetchData.cs" />
     <Compile Include="Factory\FetchFactory.cs" />
     <Compile Include="Factory\IFetchData.cs" />

@@ -9,7 +9,7 @@ namespace Common.Container
     /// 对象仓库管理
     /// </summary>
     /// <typeparam name="T">对象类型</typeparam>
-    public class CommonObjectContainer<T> : IObjectContainer<T>
+    public class ObjectContainer<T> : IObjectContainer<T>
     {
         /// <summary>
         /// 对象仓库

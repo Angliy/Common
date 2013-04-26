@@ -8,7 +8,7 @@ using System.Xml;
 namespace Common.ConfigHandler
 {
     /// <summary>
-    /// //自定义Config中节点 
+    /// //自定义配置节 
     /// </summary>
     public abstract class ConfigHandler : IConfigurationSectionHandler
     {

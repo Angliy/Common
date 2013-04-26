@@ -9,6 +9,9 @@ using System.Data.Common;
 
 namespace Common.Helper
 {
+    /// <summary>
+    /// Json操作类
+    /// </summary>
     public static class JsonHelper
     {
         #region 私有方法

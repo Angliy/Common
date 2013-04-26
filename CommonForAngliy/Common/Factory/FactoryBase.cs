@@ -15,7 +15,7 @@ namespace Common.Factory
         /// <summary>
         /// 对象仓库
         /// </summary>
-        public static IObjectContainer<T> Sotre = new CommonObjectContainer<T>();
+        public static IObjectContainer<T> Sotre = new ObjectContainer<T>();
 
         /// <summary>
         /// 创建对象
@@ -55,7 +55,7 @@ namespace Common.Factory
         /// <summary>
         /// 获取类型
         /// </summary>
-        /// <returns>类全名（程序集;完整类名）</returns>
+        /// <returns>类全名（程序集,完整类名）</returns>
         public static Type GetAssType(string fullName, params object[] paras)
         {
             string Dll = "";
@@ -74,7 +74,6 @@ namespace Common.Factory
             if (String.IsNullOrEmpty(Dll))
             {
                 supType = System.Type.GetType(ClassName);
-               
             }
             else
             {
@@ -91,7 +90,7 @@ namespace Common.Factory
         /// 获取对象
         /// </summary>
         /// <param name="name">对象名</param>
-        /// <returns>对象全名（程序集;完整类名）</returns>
+        /// <returns>对象全名（程序集,完整类名）</returns>
         public static T Get(string fullName, params object[] paras)
         {
             string typename = string.Empty;
